@@ -1,0 +1,27 @@
+{
+  "name": "node_examples",
+  "version": "1.0.0",
+  "description": "This is all nodejs examples I done...",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilsonHo/node_examples.git"
+  },
+  "keywords": [
+    "node_examples"
+  ],
+  "author": "WilsonHo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilsonHo/node_examples/issues"
+  },
+  "homepage": "https://github.com/WilsonHo/node_examples#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "elasticsearch": "^11.0.1",
+    "underscore": "^1.8.3"
+  }
+}
