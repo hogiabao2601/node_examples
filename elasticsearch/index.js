@@ -75,6 +75,7 @@ function index_with_bulk() {
     bulk_request.push(obj);
   }
   console.log("done gen");
+  
   var len = 10000;
   while (bulk_request.length > 0) {
     var bk = bulk_request.splice(0, len);
