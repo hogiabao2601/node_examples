@@ -1,0 +1,19 @@
+{
+  "name": "node_examples",
+  "version": "1.0.0",
+  "description": "This is all nodejs examples I done...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilsonHo/node_examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilsonHo/node_examples/issues"
+  },
+  "homepage": "https://github.com/WilsonHo/node_examples#readme"
+}
