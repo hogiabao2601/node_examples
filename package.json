@@ -4,16 +4,24 @@
   "description": "This is all nodejs examples I done...",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "test"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 05b95cb1b4408d62804e4ce0e8deb04431ad818e
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WilsonHo/node_examples.git"
   },
+<<<<<<< HEAD
   "keywords": [
     "node_examples"
   ],
   "author": "WilsonHo",
+=======
+  "author": "",
+>>>>>>> 05b95cb1b4408d62804e4ce0e8deb04431ad818e
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/WilsonHo/node_examples/issues"
@@ -21,7 +29,13 @@
   "homepage": "https://github.com/WilsonHo/node_examples#readme",
   "dependencies": {
     "async": "^2.0.0-rc.5",
+<<<<<<< HEAD
     "elasticsearch": "^11.0.1",
     "underscore": "^1.8.3"
+=======
+    "chai": "^3.5.0",
+    "elasticsearch": "^11.0.1",
+    "mocha": "^2.5.3"
+>>>>>>> 05b95cb1b4408d62804e4ce0e8deb04431ad818e
   }
 }
