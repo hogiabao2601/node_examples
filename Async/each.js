@@ -141,3 +141,18 @@ async.eachSeries(openFiles, function (file, callback) {
 // // configs is now a map of JSON data
 // doSomethingWith(configs);
 // });*/
+
+//var async = require('async');
+//var data = [1, 2, 3 , 4, 5];
+//var data2 = [];
+//
+//function addOne(element, cb) {
+//  element += element;
+//  data2.push(element)
+//  cb();
+//}
+//
+//async.each(data, addOne, function(err) {
+//  if (err) console.log(err);
+//  console.log('END', data2);
+//});
