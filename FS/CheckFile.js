@@ -18,14 +18,29 @@ accessFile(file, fs.R_OK)
         console.log(result);
       })
       .catch((err) => {
-        console.error("2222222222222222");
         console.error(err);
       })
   })
   .catch((err) => {
-    console.error("111111111111111");
     console.error(err);
   });
+
+
+function checkPfxFile(file) {
+  fs.stat(file, function(err, stat) {
+    if(err == null) {
+
+
+      console.log('File exists');
+    } else if(err.code == 'ENOENT') {
+      // file does not exist
+      fs.writeFile('log.txt', 'Some log\n');
+    } else {
+      console.log('Some other error: ', err.code);
+    }
+  });
+}
+
 
 
 //var file = ;
