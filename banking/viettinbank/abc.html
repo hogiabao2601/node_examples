@@ -1,0 +1,903 @@
+ 
+
+
+
+
+
+
+
+					
+
+
+	
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	 
+	<meta name = "format-detection" content = "telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=100" />
+	<title>VietinBank iPay</title>
+	<link type="image/x-icon" rel="shortcut icon" href="/ipay/pages/common/images/vietin-icon.ico" />
+	
+	<!-- styles -->
+	<link rel="stylesheet" href="/ipay/pages/common/styles/style.css">
+	<link rel="stylesheet" href="/ipay/pages/common/styles/custom.css">
+	<link rel="stylesheet" href="/ipay/pages/common/styles/login2014Nov/bootstrap.css">
+	
+	<link rel="stylesheet" href="/ipay/pages/common/styles/login2014Nov/main.css">
+	<link type="text/css" rel="stylesheet" href="/ipay/pages/common/js/shadowbox/shadowbox.css"/>
+	<link type="text/css" rel="stylesheet" href="/ipay/pages/common/css/ui.combobox.css"/>
+	<link type="text/css" rel="stylesheet" href="/ipay/pages/common/js/shadowbox/shadowbox.css"/>
+	<link href="/ipay/pages/common/css/validation.css" rel="stylesheet" type="text/css"/>
+	<link href="/ipay/pages/common/css/calendar/calendar-blue.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="/ipay/pages/common/css/keyboard.css">
+	
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<!-- end Add fancyBox -->
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="/ipay/pages/common/styles/bill201407/css/ie7.css">
+	<![endif]-->
+	
+</head>
+<body>
+<div>		
+	
+
+
+
+	
+		
+		<!-- Add fancyBox -->
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/ipay/pages/common/css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="/ipay/pages/common/scripts/jquery.min.js"></script>	
+	<script type="text/javascript" src="/ipay/pages/common/scripts/jquery.plugin.js"></script>	
+	<script type="text/javascript" src="/ipay/pages/common/scripts/jquery.main.js"></script>
+	<script type="text/javascript" src="/ipay/pages/common/scripts/ipayscripts.js"></script>		
+	
+	<script src="/ipay/pages/common/js/jquery.validationEngine.js" type="text/javascript"></script>
+		
+	<script src="/ipay/pages/common/js/jquery.validationEngine-vi.js" type="text/javascript"></script>	
+	
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="/ipay/pages/common/js/fancybox/jquery.fancybox.pack.js" ></script>
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<script type="text/javascript" src="/ipay/pages/common/js/fancybox/jquery.fancybox-buttons.js" ></script>
+	<script type="text/javascript" src="/ipay/pages/common/js/fancybox/jquery.fancybox-media.js" ></script>
+	<script type="text/javascript" src="/ipay/pages/common/js/fancybox/jquery.fancybox-thumbs.js" ></script>
+	
+	<script src="/ipay/pages/common/js/common.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/calendar/calendar.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/calendar/calendar-setup.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/calendar/lang/calendar-en.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/autoNumeric-1.7.4.js" type="text/javascript"></script>	
+	<script src="/ipay/pages/common/js/shadowbox/shadowbox.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/keyboard/keyboard.js" type="text/javascript"></script>
+	
+	<!--[if lt IE 9]>
+     <script src="/ipay/pages/common/styles/bill201407/js/html5shiv.js" type="text/javascript"></script>
+     <script src="/ipay/pages/common/styles/bill201407/js/respond.min.js" type="text/javascript"></script>
+	<![endif]-->
+	
+	
+		<div class="header-wrapper">
+			<div class="header wrapper">
+			
+				<div class="user-box">
+					<p class="user-name">NGUYEN THANH DIEU</p>		
+					<a  href="/ipay/timeout.do?log=logout" title="Đăng xuất" class="user-logout">Đăng xuất</a>						
+					<span class="last-login">
+						Ngày đăng nhập gần nhất: 14/06/2016 05:42:09
+					</span>				
+				</div>
+			
+				<div class="logo-box">
+					<span id="sub-nav" class="sub-nav-open" title="Show Menu">Show Menu</span>
+					<a class="logo" href="/ipay/home.do"></a>
+					<a href="/ipay/home.do" class="logo2"><img src="/ipay/pages/common/images/logo2.jpg" /></a>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">		
+
+		window.latestClick = '';
+
+		function isNotDblClick(objectID) {
+			if(window.latestClick != objectID) {
+				window.latestClick = objectID;
+				return true;
+			} else {
+				return false;
+			}
+		} 
+		
+		$(document).ready(function() {		
+			var check= "0";
+			if(check=="1"){				
+				window.location.href='/ipay/timeout.do?invalidSession=1';
+			}
+			
+		});
+		
+		
+				        
+</script>
+		
+	<SCRIPT type='text/javascript'>
+		window.history.forward();
+		function noBack() {window.history.forward(); }
+		window.onload='noBack()';
+		window.onpageshow=function(evt){if(evt.persisted)noBack()}
+		window.onunload=function(){void(0)} 
+		
+		$(document).ready(function() {		
+		
+		$(window).unload( function (e) {
+			jQuery("#preloader").css('display','inline');
+			$("body").css({ opacity:0.8 });
+		});
+		
+		window.onbeforeunload=function() {
+			jQuery("#preloader").css('display','inline');
+			$("body").css({ opacity:0.8 });
+		};
+		});
+	</SCRIPT>
+	<div class="main-wrapper">
+		<div class="main wrapper" id="mainContent">
+			
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+	
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
+
+
+	
+	
+	
+	
+
+
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+			
+		
+			
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	
+	
+	
+	
+	
+	
+	
+
+
+<div class="main-left">	
+				
+				<ul class="main-navigation">
+					<!-- Tab Trang chu -->
+					<li class="item-home ">
+						<span><a href="/ipay/home.do">Trang chủ</a></span>
+					</li>
+					
+					<!-- Tab Tai khoan -->
+					<li class="item-account ">
+						<span><a href="/ipay/account/inquiryHome.do">Tài khoản</a></span>
+					</li>
+					
+					<!-- Tab Giao dich tai chinh -->
+					<li class="item-transfer  active fontBold">
+						<!-- ck 3 box  -->
+						<span><a href="/ipay/finance/trxList.do">Chuyển khoản</a></span>
+						
+						<!-- 
+						<span>Chuyển khoản</span>
+	 						<ul> 
+	 							<li class="current"><a id="a_ift" href="/ipay/finance/fundTranferAction.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Chuyển khoản trong hệ thống</a></li> 
+	 							<li ><a id="a_oft" href="/ipay/finance/paymentsml.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Chuyển khoản ngoài hệ thống đến số Tài khoản</a></li> 
+	 							<li ><a id="a_oftc" href="/ipay/finance/paymentsmlcard.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Chuyển khoản ngoài hệ thống đến số Thẻ</a></li> 								
+	 							<li ><a id="a_cft" href="/ipay/finance/cloudTranferAction.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Easy Share</a></li>   
+ 							 </ul>  
+ 						 -->
+					</li>					 
+						 <li class="item-transfer2phoneno ">
+							<span><a id="a_ift_phoneno" href="/ipay/finance/inqtransfer2phoneno.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Chuyển tiền tới số điện thoại</a></span>
+												
+							
+						</li>					
+					<li class="item-payment ">
+						<span><a href="/ipay/other/billpay.do">Thanh toán hóa đơn</a></span>
+					</li>
+					
+					
+					
+					<li class="item-repay  ">
+						<span><a href="/ipay/finance/loanList.do">Trả nợ vay</a></span>
+					</li>
+					
+					<li class="item-finance  ">
+						<span><a href="/ipay/finance/finServList.do">Dịch vụ tài chính</a></span>
+					</li>					
+					<li class="item-saving ">
+						<span><a id="a_osv_closure" href="/ipay/finance/fullclosureinquiry.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Tiết kiệm trực tuyến</a></span>
+					</li>
+					
+					<li class="item-donate ">
+						<span><a id="a_donate" href="/ipay/finance/donation.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Từ thiện trực tuyến</a></span>
+					</li>
+					 
+					<li class="item-payment ">
+						<span><a id="a_prepaidCardPay" href="/ipay/finance/prepaidCardPay.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Mua thẻ cào</a></span>
+					</li>
+					 
+					<li class="item-service "><span>
+						<a id="a_wu" href="/ipay/finance/wuTC.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Western Union</a>
+
+						</span>
+<!-- 						<ul> -->
+
+
+<!-- 						</ul> -->
+					</li>
+					
+					<li class="item-report  ">
+						<span>Báo cáo</span>
+						<ul>
+							<li ><a id="a_rpt" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" rel="external" href="/ipay/report/transaction.do">Báo cáo giao dịch</a></li>
+							<li ><a id="a_suphis" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/loghistory.do">Báo cáo hoạt động điện tử</a></li>
+							<li ><a id="a_billlst" href="/ipay/other/billpay.do?ACTION=history" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Hóa đơn đã thanh toán</a></li>
+							<li ><a id="a_ezsharelst" href="/ipay/report/inqtransfercode.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Danh sách mã rút tiền</a></li>
+							  
+							<li ><a id="a_cardcodelst" href="/ipay/report/inqcardcodelst.do" onclick="if(isNotDblClick(this.id)) {return true;} else return false;">Danh sách mã thẻ cào</a></li>
+							  
+						</ul>		
+					</li>
+					
+					<li class="item-support  ">
+						<span>Hỗ trợ</span>
+						<ul>	
+							<li ><a id="a_trace" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/trace_payment.do">Tra soát</a></li>
+							<li ><a id="a_setting" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/yoursetting.do">Thông tin cá nhân</a></li>							
+							<li ><a id="a_changepass" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/changepass.do">Đổi mật khẩu</a></li>
+														
+							<li ><a id="a_recvmng" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/recvacc/RecvaccAction.do?type=list">Danh bạ</a></li>													
+							<li ><a id="a_userguide" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/userguide.do">Hướng dẫn sử dụng</a></li>						
+							<li ><a id="a_feedback" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/feedback.do?ACTION=FBLOAD">Ý kiến phản hồi</a></li>
+							<li ><a id="a_devices" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/support/trusteddevice.do">Quản lý thiết bị</a></li>
+							    
+						</ul>
+					</li>
+					<li class="item-support  ">
+						<span style="background: url('/ipay/pages/common/images/ipay-menu.png') no-repeat scroll 0px -435px rgba(0, 0, 0, 0);">
+							<a href="/ipay/promotion/promotionprog.do">Khuyến mại đặc biệt</a></span>
+						<ul>
+							<!-- <li >
+								<a id="a_promotionBillPayment" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/promotion/billpaymentpromotion.do">Khuyến mại Thanh toán hóa đơn</a>
+							</li> 
+							 <li >
+								<a id="a_luckylst" onclick="if(isNotDblClick(this.id)) {return true;} else return false;" href="/ipay/promotion/luckynumberlist.do">Khuyến mại Tiết kiệm</a></span>
+							</li>-->
+						</ul>
+					</li> 					
+				</ul>
+			</div>
+
+			<div class="main-right">
+				
+				<div class="live-content">
+					
+	<script src="/ipay/pages/common/js/ui.core.js" type="text/javascript"></script>
+	<script src="/ipay/pages/common/js/ui.combobox.js" type="text/javascript"></script>
+	<img border="0" src="/ipay/pages/common/images/iPay-ft-promotion-Banner.jpg" style="width:100%; max-width:719px;" class="banner-df" />								
+	<h2 class="page-title">Chuyển khoản trong hệ thống</h2>
+	<h3 class="underline-title"><span>1. Thông tin giao dịch</span></h3>
+	
+	<form  id="transferFrm" name="transferFrm"  action="/ipay/finance/fundTranferAction.do" method="post" class="content-form">
+		
+		
+			<div id="errorMsg">					
+			</div>	
+		
+		<p class="field-box-1">
+			<label>Tài khoản chuyển:</label>
+			<select onchange="go(this)" name="frAcct" id="frAcct" onfocus="javascript:doChangeBGColor(this);" class="validate[required]" >
+				<option  selected="selected" value="">Chọn tài khoản</option>
+				
+					<option value="711AD0596954,A,VND,0"  >(VND) - 711AD0596954</option>
+				
+			</select>
+		</p>
+		
+		<p>
+			<label >Số dư khả dụng (VND):</label>
+			<input id="currBalance" readonly="readonly" type="text" value="" />
+		</p>
+		
+		<p>
+			<label for="toAcct">Tài khoản/Số thẻ nhận:</label>
+			<input maxlength="20" type="text" name="toAcct" id="toAcct" class="validate[required]" value="" onfocus="javascript:doChangeBGColor(this);" >
+			<span class="hisTrigger">
+			<a class="fancybox" data-fancybox-type="iframe" href="/ipay/support/recvacc/ContactAction.do?type=1"><img tabindex="" src="/ipay/pages/common/img/search.gif" border="0" width="15" height="15"></a>
+			</span>
+		</p>
+									
+											
+		<p>
+			<label for="amt">Số tiền chuyển:</label>
+			<input class="validate[required,custom[onlyNam]]" type="text" name="amt" id="amt" onfocus="javascript:doChangeBGColor(this);" onblur="javascript:formatCurrency(this);" value="" >
+		</p>
+		
+		<p>
+			
+			
+				<label for="memo">Nội dung chuyển khoản: <span class="form-area-desc">còn <span id="memoCounter">54</span> ký tự</span></label>
+				<textarea class="validate[required,length[1,54]]" name="memo" id="memo" onfocus="javascript:doChangeBGColor(this);" onblur="javascript:locdau(this);" 
+				onKeyDown="textCounter(document.transferFrm.memo,document.transferFrm.remLen1,54)"
+				onKeyUp="textCounter(document.transferFrm.memo,document.transferFrm.remLen1,54)"></textarea>
+				
+			
+			
+			
+			
+			<span class="form-desc transfer-info">
+				<a class="fancybox" href="/ipay/finance/fancy.do?ACTION=IFT_FEE&dispMinBalChg=1,000.00&dispMaxAmtTrx=50.000.000&dispMaxAmtPay=200,000,000.00" data-fancybox-type="iframe" >Thông tin phí và hạn mức giao dịch</a><br />
+				<a class="fancybox" href="/ipay/finance/fancy.do?ACTION=IFT_TIME" data-fancybox-type="iframe">Giờ giao dịch</a>
+			</span>
+		</p>
+
+		<p class="form-button">
+			
+			<input id="btnSubmit" type="button" onclick="javascript:doConfirm();" value ="Chấp nhận">
+			<input id="btnReset" type="reset" onclick="javascript:doRefresh();" value ="Làm lại">			
+		</p>	
+		
+		<span style="display:none;">
+			<label for="currency">Loại tiền:</label>
+			<input type="text" name="currency" id="currency" onfocus="javascript:doChangeBGColor(this);" readonly value="">
+		</span>				
+		
+		<input type="hidden" value="" name="ACTION" id="ACTION">
+		<input type="hidden" value="" name="frAcctNo" id="frAcctNo">
+		<input type="hidden" value="" name="orgAmt" id="orgAmt">
+		<input type="hidden" value="" name="frAcctType" id="frAcctType">
+		
+		
+		<input type="hidden" value="" name="frAcct_alias" id="frAcct_alias">
+		
+		
+		<!-- <input type="hidden" value="" name="securityCode" id="securityCode"> -->
+		<input type="hidden" value="SMS" name="securityCode" id="securityCode">
+		<input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="7123cc693d3de056e9f28d2ced32d27d" >
+		
+	</form>
+	
+	
+					<div id='loadingmessage' style='display:none;' class="loadingmessage">  		
+						<img src='/ipay/pages/common/images/ajax-loader.gif'/>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>		
+		</div>
+	</div>
+	
+
+
+
+<!--footer-->
+    <footer class="cs-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                	<div class="col-md-2 col-sm-2 col-tn-3 col-xs-6">
+                    	<div class="tit-mnu-bot">Cá nhân</div>
+                        <ul class="list-mnu-bot">
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/product/ebank/leftblock/mobile-app/index.html">Mobile Banking App</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/product/ebank/leftblock/sms/index.html">SMS Banking</a></li>
+                        	<li><a href="http://card.vietinbank.vn/sites/home/vi/">Dịch vụ thẻ</a></li>
+                            <li><a href="http://www.vietinbank.vn/web/home/vn/product/loan/">Vay vốn</a></li>
+                            <li><a href="http://www.vietinbank.vn/web/home/vn/product/saving/">Tiền gửi</a></li>
+                            <li><a href="http://priority.vietinbank.vn/sites/home/index.html">Khách hàng ưu tiên</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-tn-3 col-xs-6">
+                    	<div class="tit-mnu-bot">Doanh nghiệp</div>
+                        <ul class="list-mnu-bot">
+                        	<li><a href="https://ebanking.vietinbank.vn/efast/">VietinBank eFAST</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/doanh-nghiep/cho-vay/">Cho vay doanh nghiệp</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/doanh-nghiep/tien-gui/">Tiền gửi</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/doanh-nghiep/thanh-toan-xuat-nhap-khau/">Thanh toán XNK</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/doanh-nghiep/bao-lanh/">Bảo lãnh</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/doanh-nghiep/kinh-doanh-ngoai-te/">Kinh doanh ngoại tệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-tn-3 col-xs-6">
+                    	<div class="tit-mnu-bot">Thông tin</div>
+                        <ul class="list-mnu-bot">
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/index.html">Trang chủ VietinBank</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/khuyen-mai-trung-thuong/index.html">Chương trình ưu đãi</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/san-pham-moi/index.html">Sản phẩm mới</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/lai-suat/">Lãi suất</a></li>
+                        	<li><a href="http://www.vietinbank.vn/web/home/vn/ty-gia/">Tỷ giá</a></li>
+                        	<li><a href="http://tuyendung.vietinbank.vn/hr/online/vn/index.html">Tin tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3"></div>
+                    
+                    <div class="col-md-3 col-sm-6 col-tn-3 col-xs-6 connect">
+                        <div class="hotline">
+                        	<img src="/ipay/pages/common/images/icon-phone.png" /> 1900 558868
+                        </div>
+                        <div class="hotline-contact">
+                            <a href="mailto:contact@vietinbank.vn">
+                            <img src="/ipay/pages/common/images/icon-mail.png" /> contact@vietinbank.vn
+                            </a>
+                        </div>
+                        <div class="text-connect" style="font-size:11px;">Tải ứng dụng tại</div>
+                        <div class="fb-gg">
+                            <a target="_blank" title="Dành cho thiết bị iOS" href="https://itunes.apple.com/vn/app/vietinbank-ipay/id689963454?mt=8"><img src="/ipay/pages/common/images/icon-appstore.png" /></a>
+                            <a target="_blank" title="Dành cho thiết bị Android" href="https://play.google.com/store/apps/details?id=com.vietinbank.ipay"><img src="/ipay/pages/common/images/icon-playstore.png" /></a>
+                            <a target="_blank" title="Dành cho thiết bị Windows Phone" href="http://www.windowsphone.com/en-us/store/app/vietinbank-ipay/87ef4ec2-97d7-4dbd-9b51-309c7e92636f?signin=true"><img src="/ipay/pages/common/images/icon-wpstore.png" /></a>
+                        </div>
+                    </div>
+                    
+                    <div class="clear"></div>
+                </div>
+                <!--<div class="col-md-6 col-sm-4 connect">
+                	<div class="text-connect">Hỗ trợ khách hàng</div>
+                	<div class="hotline-contact">1900 558868</div>
+                    <div class="hotline-contact">
+                    	<a href="mailto:contact@vietinbank.vn">contact@vietinbank.vn</a>
+                    </div>
+                    <div class="text-connect">Kết nối với chúng tôi</div>
+                    <div class="fb-gg">
+                    	<img src="images/icon-fb.png" />
+                        <img src="images/icon-google.png" />
+                        <img src="images/icon-in.png" />
+                    </div>
+                </div>-->
+            </div>	
+            <div class="copyright">
+            	Copyright © 2013 Ngân hàng TMCP Công thương Việt Nam. All rights reserved.
+            </div>        
+        </div>
+    </footer>
+    <!--end footer-->
+
+</div>
+<div id="preloader" class="loadingmessage" style="display:none;"><img src='/ipay/pages/common/images/ajax-loader.gif'/></div>
+
+	<script type="text/javascript" src="/ipay/pages/common/styles/bill201407/js/bootstrap.js"></script>
+
+</body>
+</html>
+
+<script language="JavaScript" type="text/javascript">
+	function doConfirm(){
+	
+	if(!$("#transferFrm").validationEngine('validate')){
+         return false;
+    }
+			var amt = document.getElementById("amt").value;
+			var orgAmt = stringToDouble(amt);
+	  	  	document.getElementById("orgAmt").value = orgAmt;
+			
+		  	document.getElementById("ACTION").value = "PRE_CONFIRM";			
+	  	  	document.transferFrm.submit();
+  	  	
+	}
+	
+  	function doRefresh() {
+  		document.getElementById("ACTION").value = "REFRESH_FRM";  		
+  	  	document.transferFrm.submit();
+  	}
+  	
+  	function go(object) {
+  	  	var objVal = object.value;
+  	  	if (objVal != "") {
+	  	  	var temp = new Array();
+	  		temp = objVal.split(',');
+	  		document.getElementById("frAcctNo").value = temp[0];
+	  		document.getElementById("frAcctType").value = temp[1];
+	  	  	document.getElementById("currency").value = temp[2];
+	  	  	document.getElementById("frAcct_alias").value = temp[3];   	
+  	  	} else {
+	  	  	document.getElementById("frAcctNo").value = "";
+	  		document.getElementById("frAcctType").value = "";
+	  	  	document.getElementById("currency").value = ""; 
+	  	  	document.getElementById("frAcct_alias").value = ""; 
+  	  	}
+  	  	
+  	  	document.getElementById("ACTION").value = "GET_BALANCE";  	
+  	  	$('#btnSubmit').click(function() { return false; });
+	  	document.transferFrm.submit();
+	  	  
+  	}
+  	
+  	function getBalance(object) {
+  		var objVal = object.value;
+  		var acctNo="";
+  		var acctType="";
+  		var acctAlias="";
+  	  	if (objVal != "") {
+	  	  	var temp = new Array();
+	  		temp = objVal.split(',');
+	  		acctNo = temp[0];
+	  		acctType = temp[1];	
+	  		acctAlias = temp[3];
+	  		document.getElementById("frAcctNo").value = temp[0];
+	  		document.getElementById("frAcctType").value = temp[1];
+	  	  	document.getElementById("currency").value = temp[2];
+	  	  	document.getElementById("frAcct_alias").value = temp[3];   	  	 	
+  	  	}   		  	 
+	  	$('#loadingmessage').show();	  	 	  	
+	    $.ajax({
+	        url: "fundTranferAction.do",
+	        type: "POST",
+	        cache: false,
+	        data: "ACTION=GET_BALANCE_AJAX&acctNo="+ acctNo+"&acctType="+acctType+"&acctAlias="+acctAlias,
+	        success : function(html){
+	        	var result = new Array();
+	  			result = html.split('|');
+	  			var flag=result[0];
+	  			var bal=result[1];
+	  			var err=result[2];	  				  			
+	  			if(flag =='0' || flag == 0){	 	  				 				  			
+	            	$("#currBalance").val(bal);
+	            	$('.error').html('').removeClass("error");	            	
+	            	$('#errorMsg').html('').removeClass("error");
+	            }
+	            else{	            	
+	            	$("#currBalance").val(''); 		            	            		            	        
+	            	$("#errorMsg").html(err).addClass("error");
+	            	$("#errorMsg").show();
+	            	if($('#serverErrorMsg').length > 0){	            		
+			        	$('#serverErrorMsg').hide();
+			        }
+	            }
+	            $('#loadingmessage').hide(); 
+	        }
+  	});
+  		
+  	}
+  	
+  	function doNotepad(object) {
+  	    var width = "500";
+  	    var height = "220";
+  	    var newWin = window.open("/ipay/pages/common/Notepad.html", "Notepad", centerWindow(width, height));
+  	  	if (window.focus) {
+  	  		newWin.focus();
+	   	}
+ 	}
+ // Open new window
+  	function centerWindow(width, height) {
+  	    var left = parseInt((screen.availWidth/2) - (width/2));
+  	    var top = parseInt((screen.availHeight/2) - (height/2));
+  	    var windowFeatures = "width=" + width + ",height=" + height + 
+  	                         ",status=no,menubar=no,titlebar=no,left=" + left + ",top=" + top + 
+  	                         ",screenX=" + left + ",screenY=" + top;
+  	    return windowFeatures;
+  	}
+
+  	$(document).ready(function() {
+		$("#transferFrm").validationEngine ({
+			inlineValidation: false,
+			scroll:false,
+			promptPosition: "topRight",
+			success :  false
+		});
+		
+		if($('#serverErrorMsg').length > 0){
+        	$('#errorMsg').hide();
+        }
+		
+		$('#btnSubmit').removeAttr("disabled");
+		
+		Shadowbox.init({
+	         viewportPadding: "50"
+        });
+        
+        $(".fancybox").fancybox({
+			maxWidth	: 800,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: '100%',
+			height		: '100%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+		
+		
+	});
+
+  	function locdau(object) {
+  	  	var str1 = object.value;  
+		
+  	  	str1 = str1.replace(/\u00e0/g, 'a');
+	  	str1 = str1.replace(/\u00e1/g, 'a');
+	  	str1 = str1.replace(/\u1ea3/g, 'a');
+	  	str1 = str1.replace(/\u00e3/g, 'a');
+	  	str1 = str1.replace(/\u1ea1/g, 'a');
+	
+	  	str1 = str1.replace(/\u0103/g, 'a');
+	  	str1 = str1.replace(/\u1eb1/g, 'a');
+	  	str1 = str1.replace(/\u1eaf/g, 'a');
+	  	str1 = str1.replace(/\u1eb3/g, 'a');
+	  	str1 = str1.replace(/\u1eb5/g, 'a');
+	  	str1 = str1.replace(/\u1eb7/g, 'a');
+	
+	  	str1 = str1.replace(/\u00e2/g, 'a');
+	  	str1 = str1.replace(/\u1ea7/g, 'a');
+	  	str1 = str1.replace(/\u1ea5/g, 'a');
+	  	str1 = str1.replace(/\u1ea9/g, 'a');
+	  	str1 = str1.replace(/\u1eab/g, 'a');
+	  	str1 = str1.replace(/\u1ead/g, 'a');
+	
+	  	str1 = str1.replace(/\u00c0/g, 'A');
+	  	str1 = str1.replace(/\u00c1/g, 'A');
+	  	str1 = str1.replace(/\u1ea2/g, 'A');
+	  	str1 = str1.replace(/\u00c3/g, 'A');
+	  	str1 = str1.replace(/\u1ea0/g, 'A');
+	
+	  	str1 = str1.replace(/\u0102/g, 'A');
+	  	str1 = str1.replace(/\u1eb0/g, 'A');
+	  	str1 = str1.replace(/\u1eae/g, 'A');
+	  	str1 = str1.replace(/\u1eb2/g, 'A');
+	  	str1 = str1.replace(/\u1eb4/g, 'A');
+	  	str1 = str1.replace(/\u1eb6/g, 'A');
+	
+	  	str1 = str1.replace(/\u00c2/g, 'A');
+	  	str1 = str1.replace(/\u1ea6/g, 'A');
+	  	str1 = str1.replace(/\u1ea4/g, 'A');
+	  	str1 = str1.replace(/\u1ea8/g, 'A');
+	  	str1 = str1.replace(/\u1eaa/g, 'A');
+	  	str1 = str1.replace(/\u1eac/g, 'A');
+	
+	  	str1 = str1.replace(/\u0111/g, 'd');
+	  	str1 = str1.replace(/\u0110/g, 'D');
+	
+	  	str1 = str1.replace(/\u00e8/g, 'e');
+	  	str1 = str1.replace(/\u00e9/g, 'e');
+	  	str1 = str1.replace(/\u1ebb/g, 'e');
+	  	str1 = str1.replace(/\u1ebd/g, 'e');
+	  	str1 = str1.replace(/\u1eb9/g, 'e');
+	
+	  	str1 = str1.replace(/\u00ea/g, 'e');
+	  	str1 = str1.replace(/\u1ec1/g, 'e');
+	  	str1 = str1.replace(/\u1ebf/g, 'e');
+	  	str1 = str1.replace(/\u1ec3/g, 'e');
+	  	str1 = str1.replace(/\u1ec5/g, 'e');
+	  	str1 = str1.replace(/\u1ec7/g, 'e');
+	
+	  	str1 = str1.replace(/\u00c8/g, 'E');
+	  	str1 = str1.replace(/\u00c9/g, 'E');
+	  	str1 = str1.replace(/\u1eba/g, 'E');
+	  	str1 = str1.replace(/\u1ebc/g, 'E');
+	  	str1 = str1.replace(/\u1eb8/g, 'E');
+	
+	  	str1 = str1.replace(/\u00ca/g, 'E');
+	  	str1 = str1.replace(/\u1ec0/g, 'E');
+	  	str1 = str1.replace(/\u1ebe/g, 'E');
+	  	str1 = str1.replace(/\u1ec2/g, 'E');
+	  	str1 = str1.replace(/\u1ec4/g, 'E');
+	  	str1 = str1.replace(/\u1ec6/g, 'E');
+	
+	  	str1 = str1.replace(/\u00ec/g, 'i');
+	  	str1 = str1.replace(/\u00ed/g, 'i');
+	  	str1 = str1.replace(/\u1ec9/g, 'i');
+	  	str1 = str1.replace(/\u0129/g, 'i');
+	  	str1 = str1.replace(/\u1ecb/g, 'i');
+	
+	  	str1 = str1.replace(/\u00cc/g, 'I');
+	  	str1 = str1.replace(/\u00cd/g, 'I');
+	  	str1 = str1.replace(/\u1ec8/g, 'I');
+	  	str1 = str1.replace(/\u0128/g, 'I');
+	  	str1 = str1.replace(/\u1eca/g, 'I');
+	
+	  	str1 = str1.replace(/\u00f2/g, 'o');
+	  	str1 = str1.replace(/\u00f3/g, 'o');
+	  	str1 = str1.replace(/\u1ecf/g, 'o');
+	  	str1 = str1.replace(/\u00f5/g, 'o');
+	  	str1 = str1.replace(/\u1ecd/g, 'o');
+	
+	  	str1 = str1.replace(/\u00f4/g, 'o');
+	  	str1 = str1.replace(/\u1ed3/g, 'o');
+	  	str1 = str1.replace(/\u1ed1/g, 'o');
+	  	str1 = str1.replace(/\u1ed5/g, 'o');
+	  	str1 = str1.replace(/\u1ed7/g, 'o');
+	  	str1 = str1.replace(/\u1ed9/g, 'o');
+	
+	  	str1 = str1.replace(/\u01a1/g, 'o');
+	  	str1 = str1.replace(/\u1edd/g, 'o');
+	  	str1 = str1.replace(/\u1edb/g, 'o');
+	  	str1 = str1.replace(/\u1edf/g, 'o');
+	  	str1 = str1.replace(/\u1ee1/g, 'o');
+	  	str1 = str1.replace(/\u1ee3/g, 'o');
+	
+	  	str1 = str1.replace(/\u00d2/g, 'O');
+	  	str1 = str1.replace(/\u00d3/g, 'O');
+	  	str1 = str1.replace(/\u1ece/g, 'O');
+	  	str1 = str1.replace(/\u00d5/g, 'O');
+	  	str1 = str1.replace(/\u1ec6/g, 'O');
+	
+	  	str1 = str1.replace(/\u00d4/g, 'O');
+	  	str1 = str1.replace(/\u1ed2/g, 'O');
+	  	str1 = str1.replace(/\u1ed0/g, 'O');
+	  	str1 = str1.replace(/\u1ed4/g, 'O');
+	  	str1 = str1.replace(/\u1ed6/g, 'O');
+	  	str1 = str1.replace(/\u1ed8/g, 'O');
+	
+	  	str1 = str1.replace(/\u01a0/g, 'O');
+	  	str1 = str1.replace(/\u1edc/g, 'O');
+	  	str1 = str1.replace(/\u1eda/g, 'O');
+	  	str1 = str1.replace(/\u1ede/g, 'O');
+	  	str1 = str1.replace(/\u1ee0/g, 'O');
+	  	str1 = str1.replace(/\u1ee2/g, 'O');
+	
+	  	str1 = str1.replace(/\u00f9/g, 'u');
+	  	str1 = str1.replace(/\u00fa/g, 'u');
+	  	str1 = str1.replace(/\u1ee7/g, 'u');
+	  	str1 = str1.replace(/\u0169/g, 'u');
+	  	str1 = str1.replace(/\u1ee5/g, 'u');
+	
+	  	str1 = str1.replace(/\u01b0/g, 'u');
+	  	str1 = str1.replace(/\u1eeb/g, 'u');
+	  	str1 = str1.replace(/\u1ee9/g, 'u');
+	  	str1 = str1.replace(/\u1eed/g, 'u');
+	  	str1 = str1.replace(/\u1eef/g, 'u');
+	  	str1 = str1.replace(/\u1ef1/g, 'u');
+	
+	  	str1 = str1.replace(/\u00d9/g, 'U');
+	  	str1 = str1.replace(/\u00da/g, 'U');
+	  	str1 = str1.replace(/\u1ee6/g, 'U');
+	  	str1 = str1.replace(/\u0168/g, 'U');
+	  	str1 = str1.replace(/\u1ee4/g, 'U');
+	
+	  	str1 = str1.replace(/\u01af/g, 'U');
+	  	str1 = str1.replace(/\u1eea/g, 'U');
+	  	str1 = str1.replace(/\u1ee8/g, 'U');
+	  	str1 = str1.replace(/\u1eec/g, 'U');
+	  	str1 = str1.replace(/\u1eee/g, 'U');
+	  	str1 = str1.replace(/\u1ef0/g, 'U');
+	
+	  	str1 = str1.replace(/\u00ec/g, 'i');
+	  	str1 = str1.replace(/\u00ed/g, 'i');
+	  	str1 = str1.replace(/\u1ec9/g, 'i');
+	  	str1 = str1.replace(/\u0129/g, 'i');
+	  	str1 = str1.replace(/\u1ecb/g, 'i');
+	
+	  	str1 = str1.replace(/\u00cc/g, 'I');
+	  	str1 = str1.replace(/\u00cd/g, 'I');
+	  	str1 = str1.replace(/\u1ec8/g, 'I');
+	  	str1 = str1.replace(/\u0128/g, 'I');
+	  	str1 = str1.replace(/\u1eca/g, 'I');
+	
+	  	str1 = str1.replace(/\u1ef3/g, 'y');
+	  	str1 = str1.replace(/\u00fd/g, 'y');
+	  	str1 = str1.replace(/\u1ef7/g, 'y');
+	  	str1 = str1.replace(/\u1ef9/g, 'y');
+	  	str1 = str1.replace(/\u1ef5/g, 'y');
+	
+	  	str1 = str1.replace(/\u1ef2/g, 'Y');
+	  	str1 = str1.replace(/\u00dd/g, 'Y');
+	  	str1 = str1.replace(/\u1ef6/g, 'Y');
+	  	str1 = str1.replace(/\u1ef8/g, 'Y');
+	  	str1 = str1.replace(/\u1ef4/g, 'Y');
+
+		
+  		str1= str1.replace("--","-"); //thay tháº¿ 2- thÃ nh 1- 
+  		object.value = str1;
+  		return;  
+  	}   
+
+  	function textCounter(field,cntfield,maxlimit) {
+  		if (field.value.length > maxlimit) // if too long...trim it!
+  			field.value = field.value.substring(0, maxlimit);
+  		// otherwise, update 'characters left' counter
+  		else
+  			//cntfield.value = maxlimit - field.value.length;
+  			$("#memoCounter").text(maxlimit - field.value.length);
+  	}
+  	
+  	
+    
+    function searchRecvAcc() {
+       Shadowbox.open({
+           content:    '/ipay/support/recvacc/ContactAction.do?type=1',
+           player:     "iframe",
+           title:      "",
+           width:    700,
+           height:   400
+       });
+	}	
+</script> 
