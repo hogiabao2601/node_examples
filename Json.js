@@ -1,0 +1,10 @@
+'use strict';
+
+/**
+ * Created by baohg on 09/06/2016.
+ */
+
+var json = '{"data":{"messages":[{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Họ tên chủ thẻ","message":"PHẠM HỒ CÔNG TRUNG","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Số thẻ","message":"9704060733941292","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Loại tài khoản","message":"Tài khoản thẻ nội địa","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Tính đến ngày","message":"09/06/2016 04:30 PM","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Tình trạng","message":"TK ĐANG KÍCH HOẠT","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Số dư thực tế","message":"82,057 VND","type":"text","link":null},{"nextService":0,"iconType":null,"endline":true,"hideMessages":null,"messageCode":null,"detailMessages":null,"subMessage":null,"name":"Số dư khả dụng","message":"82,057 VND","type":"text","link":null}],"mapStoreValue":null,"title":"Thông tin tài khoản 0101580617","viewForm":true,"records":0,"changeViews":null,"popupMessage":null,"pageID":0,"footerMsg":null,"preMenu":null,"headerMsg":null,"pages":0,"type":"Show"},"status":0}';
+console.log(json);
+
+console.log(JSON.parse(json).data);

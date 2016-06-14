@@ -27,6 +27,8 @@ function login(callback) {
     qs: form
   };
 
+  console.log(param);
+
   request.get(param, function (err, res, body) {
     if (err) {
       console.error(err);
@@ -94,10 +96,12 @@ function transferMoney1(callback) {
     form: form
   };
 
+  console.log(param);
   request.post(param, function (err, res, body) {
     if (err) {
       console.error(err);
     } else {
+      console.log(res.body);
     }
     callback(null);
   });
@@ -130,7 +134,7 @@ function transferMoney2(callback) {
 
 function transferMoney3(callback) {
   console.log("Chuyển tiền3");
-  var path = '/khcn/services/serviceManager/execute.json?_dc=1465375431585';
+  var path = '/khcn/services/serviceManager/execute.json';
   var url = host + path;
 
   var form = {
@@ -198,7 +202,7 @@ async.series([
   //checkStatus,
   //getUserConfig,
   transferMoney1,
-  transferMoney2,
-  transferMoney3,
-  authenticateOTP,
+  //transferMoney2,
+  //transferMoney3,
+  //authenticateOTP,
 ]);
