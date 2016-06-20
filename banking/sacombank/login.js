@@ -3,6 +3,7 @@
 /**
  * Created by baohg on 13/06/2016.
  */
+process.binding('http_parser').HTTPParser = require('http-parser-js').HTTPParser;
 var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
@@ -597,13 +598,12 @@ request.get(login_page, (err, res, body) => {
         }
       }
 
-      console.log(param);
-
       request.post(param, (err, res, body) =>{
         if(err){
           console.error(err);
         }else{
-          console.log(res);
+          fs.writeFile('abc.html', res.statusCode)
+
         }
       });
     });
