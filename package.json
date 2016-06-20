@@ -24,8 +24,6 @@
     "config": "^1.21.0",
     "crypto-js": "^3.1.6",
     "elasticsearch": "^11.0.1",
-    "jQuery": "^1.7.4",
-    "jquery": "^3.0.0",
     "lodash": "^4.13.1",
     "mocha": "^2.5.3",
     "needle": "^1.0.0",
