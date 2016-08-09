@@ -89,8 +89,6 @@ function index_with_bulk() {
       });
     });
   }
-
-
 }
 
 //index_without_bulk();

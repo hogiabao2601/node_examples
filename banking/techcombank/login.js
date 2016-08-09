@@ -75,7 +75,8 @@ function login() {
           return _.split(string, ';')[0];
         }).join('; ');
         var $ = cheerio.load(res.body);
-
+        // Đã login xong
+        // Tải trang contex
         var context = {
           id: $('td').eq(3).attr('id'),
           fragmenturl: $('td').eq(3).attr('fragmenturl'),
@@ -86,6 +87,8 @@ function login() {
             Cookie: cookie,
           },
         }
+        // Đã load xong cái main body
+
         request.get(param, (err, res, body) => {
           if (err) {
 
@@ -1025,7 +1028,7 @@ function login() {
                                         WS_FragmentName: main.id
                                       }
                                     };
-                                    console.log(param);
+
                                     request.post(param, (err, res, body)=> {
                                       if (err) {
 

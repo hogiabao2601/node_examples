@@ -1,50 +1,17 @@
-'use strict';
-
-/**
- * Created by baohg on 14/06/2016.
- */
-
-//var CryptoJS = require("crypto-js");
-//
-//console.log(CryptoJS.AES.encrypt("data", "secret") + "");
-//console.log(Math.random());
-//
-//var ZERO_ARRAY
-//
-//function setMaxDigits(value) {
-//  var maxDigits = value;
-//  ZERO_ARRAY = new Array(maxDigits);
-//  for (var iza = 0; iza < ZERO_ARRAY.length; iza++) ZERO_ARRAY[iza] = 0;
-//  var bigZero = new BigInt();
-//  var bigOne = new BigInt();
-//  bigOne.digits[0] = 1;
-//
-//  console.log(bigOne);
-//}
-//
-//function BigInt(flag) {
-//  if (typeof flag == "boolean" && flag == true) {
-//    this.digits = null;
-//  } else {
-//    this.digits = ZERO_ARRAY.slice(0);
-//  }
-//  this.isNeg = false;
-//}
-//
-//
-//setMaxDigits(131)
 
 
-const request = require('request');
+var abc = 'AuthenticationFG.USER_PRINCIPAL=tunshin&AuthenticationFG.ACCESS_CODE=87d07c5468b280533fb9ecc51451ed37e18c14cb8e712c7cd8df748e66ac798eabe989c9466ce08c74ad438bdbe50c04211d18d39af9be641eea36e1360bb71f11d393390facf5f5c4736ee05c42ab27c95e51fbfe1bd115ea3809f3ff1b38ecbba634718bf7064cba84a103406247d82379563649d8232832f9513a7a3ea765&MIN_LENGTH_OF_PASSWORD=6'
 
+var querystring = require('querystring');
 
-var url = 'https://www.isacombank.com.vn/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=303&AuthenticationFG.PREFERRED_LANGUAGE=003&LANGUAGE_ID=003'
+var bao = {
+  'AuthenticationFG.USER_PRINCIPA': 'tunshin',
+  'AuthenticationFG.ACCESS_CODE': '1ab89c08cb847cab5d43e893f6c3bc70db2fe0818b45c46dafe6185d6e40c57c418314e4f59a635a31a19fdfec13840111935054de83edc74ad42dc3e8152d93be498a17a3127aec6ecba1d9a206c8bc2dc68e92e5fe38b11a184b96800c52c10e58ba8d559b8ff4a9034887fb92d5eae50377f52552159500553d006f844dcc',
+  MIN_LENGTH_OF_PASSWORD: '6'
+}
 
-request.get(url, (err, res, body) =>{
-  console.log(res);
-  if (err){
-    console.error(err);
-  }else{
-    console.log(res);
-  }
-});
+console.log(querystring.stringify(bao).length);
+console.log(abc.length);
+//var b = JSON.parse(a);
+//
+//console.log(b);

@@ -1,0 +1,173 @@
+{
+  "installs": {
+    "mappings": {
+      "access": {
+        "properties": {
+          "country": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "city": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "gaid": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "ipPublic": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "brandModel": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "storeCallback": {
+            "type": "boolean"
+          },
+          "imsi": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "clientVersion": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "deviceId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "platform": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "telcoId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "is3g": {
+            "type": "boolean"
+          },
+          "ipPrivate": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "screenSize": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "wid": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "osVersion": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "requestId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "appId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "packageName": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "email": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "ram": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "timestamp": {
+            "format": "strict_date_optional_time||epoch_millis",
+            "type": "date"
+          },
+          "brandName": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "utmSource": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "cLang": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "trackId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "idfa": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "utmTerm": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "cpu": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "userAgent": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "utmCampaign": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "is3G": {
+            "type": "boolean"
+          },
+          "pData": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "accountId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "macAddress": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "isWifi": {
+            "type": "boolean"
+          },
+          "imei": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "sLang": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "sdkVersion": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "utmMedium": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "partnerId": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "isOther": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

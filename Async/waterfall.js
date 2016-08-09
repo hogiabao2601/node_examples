@@ -5,22 +5,42 @@
  */
 var async = require('async');
 
+// Or, with named functions:
+
+var config = 'abc';
+var config2 = 'xyz';
 async.waterfall([
-  function(callback) {
-    var one = 'one', two ='two';
-    // null is error
-    callback(null, one, two);
-  },
-  function(arg1, arg2, callback) {
-    // arg1 now equals 'one' and arg2 now equals 'two'
-    console.log(arg1);
-    console.log(arg2);
-    callback(null, 'three');
-  },
-  function(arg1, callback) {
-    // arg1 now equals 'three'
-    callback(null, 'done');
-  }
+  async.apply(setupConfig1, config),
+  async.apply(setupConfig2, config2),
+  myFirstFunction,
+  mySecondFunction,
+  myLastFunction,
 ], function (err, result) {
+  console.log(result);
   // result now equals 'done'
 });
+
+function setupConfig1(config, callback) {
+  callback(null, config);
+}
+
+function setupConfig2(config1, config2,callback) {
+  console.log(config1);
+  console.log(config2);
+  console.log(callback);
+
+  callback(null, config1, config2);
+}
+
+
+function myFirstFunction(config1, config2, callback) {
+  callback(null, 'one', 'two');
+}
+function mySecondFunction(arg1, arg2, callback) {
+  // arg1 now equals 'one' and arg2 now equals 'two'
+  callback(null, 'three');
+}
+function myLastFunction(arg1, callback) {
+  // arg1 now equals 'three'
+  callback(null, 'done');
+}

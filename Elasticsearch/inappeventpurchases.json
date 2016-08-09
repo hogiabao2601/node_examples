@@ -1,0 +1,257 @@
+{
+  "inappeventpurchases": {
+    "mappings": {
+      "access": {
+        "properties": {
+          "accountId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "appId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr1": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr10": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr2": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr3": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr4": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr5": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr6": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr7": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr8": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "attr9": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "brandModel": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "brandName": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "cLang": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "city": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "clientVersion": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "country": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "cpu": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "credit": {
+            "type": "double"
+          },
+          "currencyCode": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "deviceId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "email": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "eventKey": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "gaid": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "idfa": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "imei": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "imsi": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "installedTime": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "ipPrivate": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "ipPublic": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "is3G": {
+            "type": "boolean"
+          },
+          "isOther": {
+            "type": "boolean"
+          },
+          "isWifi": {
+            "type": "boolean"
+          },
+          "logId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "macAddress": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "money": {
+            "type": "double"
+          },
+          "osVersion": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "pData": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "packageName": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "partnerId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "paymentGateway": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "paymentType": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "placePurchase": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "platform": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "ram": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "requestId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "sLang": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "screenSize": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "sdkVersion": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "serverId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "telcoId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "timestamp": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "trackId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "unit": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "userAgent": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "userId": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "userName": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "utmCampaign": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "utmMedium": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "utmSource": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "utmTerm": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "wid": {
+            "type": "string",
+            "index": "not_analyzed"
+          }
+        }
+      }
+    }
+  }
+}
