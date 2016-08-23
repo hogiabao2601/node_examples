@@ -15,6 +15,7 @@ var type = "abulk";
 var xlopp = 1000000;
 
 var client;
+connectElastic()
 function connectElastic(callback) {
   //if already we have a connection, don't connect to database again
   if (client) {
@@ -23,7 +24,7 @@ function connectElastic(callback) {
   }
 
   //var host = "pixel.mobo.vn";
-  var host = "test.server";
+  var host = "localhost";
   var port = "9200";
   var connectionString = `${host}:${port}`;
 
@@ -32,17 +33,82 @@ function connectElastic(callback) {
     log: 'error'
   });
 
-  client.ping({
-    requestTimeout: Infinity,
-    hello: "elasticsearch!"
-  }, function (error) {
-    if (error) {
-      console.error('[ELASTICSEARCH] cluster is down!');
-    } else {
-      console.info('[ELASTICSEARCH] connection is ok');
-    }
+  client.delete({
+    index: 'example_index',
+    type: 'posts',
+    id: '1',
+  })
+
+  //client.search({
+  //  index: 'example_index',
+  //  type: 'posts',
+  //  body: {
+  //    query: {
+  //      match: {
+  //        message: 'Hello World'
+  //      }
+  //    }
+  //  }
+  //}, (error, data) => {
+  //  console.log(JSON.stringify(data, null, 4));
+  //});
+
+console.time("data");
+  client.index({
+    index: 'example_index',
+    type: 'posts',
+    id: '1',
+    body: {
+      user: 'me',
+      post_date: new Date(),
+      message: 'Hello World!'
+    },
+    refresh: true
+  }, (error, data) => {
+    //console.log(data);
+    client.search({
+      index: 'example_index',
+      type: 'posts',
+      body: {
+        query: {
+          match: {
+            message: 'Hello World'
+          }
+        }
+      }
+    }, (error, data) => {
+      console.timeEnd("data");
+      //console.log(a);
+      //console.log(JSON.stringify(data, null, 4));
+
+    });
   });
-  callback(client);
+
+  //client.search({
+  //  index: 'example_index',
+  //  type: 'posts',
+  //  body: {
+  //    query: {
+  //      match: {
+  //        message: 'Hello World'
+  //      }
+  //    }
+  //  }
+  //}, (error, data) => {
+  //  console.log(JSON.stringify(data, null, 4));
+  //});
+
+  //client.ping({
+  //  requestTimeout: Infinity,
+  //  hello: "elasticsearch!"
+  //}, function (error) {
+  //  if (error) {
+  //    console.error('[ELASTICSEARCH] cluster is down!');
+  //  } else {
+  //    console.info('[ELASTICSEARCH] connection is ok');
+  //  }
+  //});
+  //callback(client);
 };
 
 //index without bulk
@@ -92,7 +158,7 @@ function index_with_bulk() {
 }
 
 //index_without_bulk();
-index_with_bulk();
+//index_with_bulk();
 
 
 

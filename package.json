@@ -33,6 +33,7 @@
     "mongodb": "^2.2.1",
     "needle": "^1.0.0",
     "node-tesseract": "^0.2.7",
+    "otplib": "^3.0.1",
     "pg": "^6.0.3",
     "python-shell": "^0.4.0",
     "querystring": "^0.2.0",
